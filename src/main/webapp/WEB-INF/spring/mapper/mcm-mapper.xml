@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.yoon.car.dao.CarManageDao">
+	<insert  id="insert">
+		INSERT INTO tbl_mcm 
+		(cm_div,cm_stdate,cm_stTIME,cm_stKM,
+		cm_arrDate,cm_arrTime,cm_arrKM,cm_place,cm_cost)
+		VALUES (#{cm_div},#{cm_stdate},#{cm_stTIME},#{cm_stKM},
+		#{cm_arrDate},#{cm_arrTime},#{cm_arrKM},#{cm_place},#{cm_cost});
+	</insert>
+	<update id= "update">
+		UPDATE tbl_mcm
+		SET 
+		cm_div = "#{cm_div}",
+		cm_stKM = #{cm_stKM},
+		cm_arrKM = #{cm_arrKM},
+		cm_place = "#{cm_place}",
+		cm_cost = #{cm_cost}
+		WHERE cm_seq = #{cm_seq}
+	</update>
+</mapper>

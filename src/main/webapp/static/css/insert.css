@@ -1,0 +1,58 @@
+@charset "UTF-8";
+article#insert_con {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  flex: 3;
+}
+article#table_con {
+  width: 80%;
+  flex: 7;
+}
+article#insert_con div {
+  display: flex;
+}
+article#insert_con div:first-of-type {
+  justify-content: flex-start;
+}
+article#insert_con div:last-of-type {
+  justify-content: flex-end;
+}
+article#insert_con div div {
+  margin: 10px;
+}
+article#insert_con input {
+  height: 40px;
+  padding: 10px;
+}
+div#insertTitle,
+div#inputSaveBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(177, 202, 255);
+  width: 100px;
+  padding: 5px 10px;
+}
+
+table#insertTable {
+  border: none;
+  text-align: center;
+  width: 100%;
+  margin: 20px;
+  padding: 5px;
+  border-top: 1px solid #818181;
+  border-collapse: collapse;
+}
+table#insertTable th,
+table#insertTable td {
+  border-bottom: 1px solid #818181;
+  padding: 10px;
+}
+table#insertTable td {
+  cursor: pointer;
+  transition: 0.3s;
+}
+table#insertTable td:hover {
+  background-color: #d0ddff;
+}
